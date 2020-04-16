@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+}
+
+body, ul {
+  margin: 0;
+}
+
+ul {
+  display: grid;
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  will-change: opacity;
+}
+
+ul img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#thumbnails {
+  --columns: 7;
+  --gutter: 20px;
+  --size: calc((100vw - (var(--columns) + 1) * var(--gutter)) / var(--columns));
+  grid: auto-flow var(--size) / repeat(var(--columns), 1fr);
+  gap: var(--gutter);
+  padding: var(--gutter);
+  box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+  #thumbnails {
+    --columns: 3;
+    --gutter: 15px;
+  }
+}
+
+#scroller {
+  grid: 100% / auto-flow 100%;
+  scroll-snap-type: x mandatory;
+  padding: 0;
+}
+
+#scroller li {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
+}

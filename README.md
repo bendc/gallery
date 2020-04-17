@@ -1,6 +1,6 @@
 # Gallery
 
-Simple swipeable photo gallery. [View demo →](https://cldup.com/NYhJaV-jGy.html)
+Simple swipeable photo gallery. [View demo →](https://cldup.com/CjFmTyRE4D.html)
 
 ## Usage
 

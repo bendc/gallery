@@ -1,6 +1,6 @@
 # Gallery
 
-Simple swipeable photo gallery. [View demo →](https://cldup.com/CjFmTyRE4D.html)
+Simple swipeable photo gallery. [View demo →](https://gallery-demo-woad.vercel.app)
 
 ## Usage
 
